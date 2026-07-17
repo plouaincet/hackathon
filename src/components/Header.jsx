@@ -12,13 +12,14 @@ function Header() {
       </div>
 
       <nav className={menuOpen ? "nav active" : "nav"}>
-        <Link to="/">Acasă</Link>
-        <Link to="/listen">Ascultă</Link>
-        <Link to="/vent">Vent</Link>
+        <Link to="/">Journaling</Link>
+        <Link to="/listen">Exercitii</Link>
+        <Link to="/vent">2AM buddy</Link>
       </nav>
 
       <button className="account-btn">
-        Account
+        <div className="circle"></div>
+        <div className="circlejos"></div>
       </button>
 
       <button

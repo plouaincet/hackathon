@@ -7,9 +7,8 @@
 
 body{
 
-    background:#0F172A;
-
-    color:white;
+    background:#345830;
+    color: #ede0d4;
 
 }
 
@@ -25,7 +24,7 @@ body{
 
 .subtitle{
 
-    color:#94A3B8;
+    color:#8ba993;
 
     margin-top:10px;
 
@@ -35,7 +34,7 @@ body{
 
 .sliderBox{
 
-    background:#1E293B;
+    background:#1e3f20;
 
     padding:30px;
 
@@ -57,7 +56,7 @@ body{
 
     border-radius:30px;
 
-    background:#334155;
+    background:#4b674a;
 
     outline:none;
 
@@ -75,7 +74,7 @@ body{
 
     border-radius:50%;
 
-    background:#7C3AED;
+    background:#8fa488;
 
     cursor:pointer;
 
@@ -99,7 +98,7 @@ body{
 
 .optionCard{
 
-    background:#1E293B;
+    background:#1e3f20;
 
     border:none;
 
@@ -119,7 +118,7 @@ body{
 
     transform:translateY(-4px);
 
-    background:#334155;
+    background:#3f6843;
 
 }
 
