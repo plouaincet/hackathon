@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { CiUser } from "react-icons/ci";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,15 +12,14 @@ function Header() {
         <Link to="/">MindCare</Link>
       </div>
 
-      <nav className={menuOpen ? "nav active" : "nav"}>
+      <nav className={`nav ${menuOpen ? "active" : ""}`}>
         <Link to="/">Journaling</Link>
         <Link to="/listen">Exercitii</Link>
         <Link to="/vent">2AM buddy</Link>
       </nav>
 
-      <button className="account-btn">
-        <div className="circle"></div>
-        <div className="circlejos"></div>
+       <button className="account-btn">
+        <CiUser className="icon" />
       </button>
 
       <button
