@@ -13,27 +13,28 @@ export default function Home() {
                 How are you feeling tonight?
             </p>
 
-            <MoodSlider />
-
             <h2>What would you like to do tonight?</h2>
 
             <div className="options">
 
                 <OptionCard
-                    title="Listen"
-                    emoji="🎧"
+                    title="Chat"
+                    emoji="💬"
+                    description="Talk with Buddy about anything that's on your mind tonight."
                     path="/listen"
                 />
 
                 <OptionCard
-                    title="Vent"
-                    emoji="💬"
-                    path="/vent"
+                    title="Journal"
+                    emoji="📖"
+                    description="Track your mood and write down your thoughts before bed."
+                    path="/journal"
                 />
 
                 <OptionCard
-                    title="Calm Activities"
+                    title="Exercises"
                     emoji="🌿"
+                    description="Breathing, grounding and relaxation exercises."
                     path="/calm"
                 />
 
