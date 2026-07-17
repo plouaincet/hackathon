@@ -15,11 +15,7 @@ export default function Calm(){
             </button>
 
             <button className="activity">
-                Progressive Relaxation
-            </button>
-
-            <button className="activity">
-                Gratitude Journal
+                Fun facts
             </button>
 
         </div>
