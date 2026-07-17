@@ -12,6 +12,10 @@ body{
 
 }
 
+.emoji {
+    font-size: 60px;
+}
+
 .container{
 
     width:100%;
@@ -38,7 +42,7 @@ body{
     background:#1e3f20;
 
     padding:30px;
-
+    
     border-radius:25px;
 
     margin-bottom:50px;
@@ -244,14 +248,22 @@ body{
 
     border-radius:18px;
 
-    background:#7C3AED;
+    background:#1e3f20;
 
     color:white;
 
     cursor:pointer;
 
     font-size:16px;
+    
+    transition:.25s;
 
+}
+
+.activity:hover {
+    background:#3f6843;
+
+    transform:translateY(-3px);
 }
 
 .journalBox{

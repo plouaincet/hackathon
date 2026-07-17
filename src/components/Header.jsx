@@ -13,8 +13,8 @@ function Header() {
       </div>
 
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
-        <Link to="/">Journaling</Link>
-        <Link to="/listen">Exercitii</Link>
+        <Link to="/journal">Journaling</Link>
+        <Link to="/calm">Exercitii</Link>
         <Link to="/vent">2AM buddy</Link>
       </nav>
 
