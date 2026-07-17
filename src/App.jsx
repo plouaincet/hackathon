@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Journal from "./pages/Journal";
 
 import Header from "./components/Header";
 
@@ -15,6 +16,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/journal" element={<Journal />} />
         <Route path="/listen" element={<Listen />} />
         <Route path="/vent" element={<Vent />} />
         <Route path="/calm" element={<Calm />} />
