@@ -8,6 +8,8 @@ import Listen from "./pages/Listen";
 import Vent from "./pages/Vent";
 import Calm from "./pages/Calm";
 
+import Grounding from "./pages/Grounding";
+
 function App() {
   return (
     <BrowserRouter>
