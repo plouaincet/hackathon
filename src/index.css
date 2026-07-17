@@ -14,11 +14,12 @@ body{
 
 .container{
 
-    width:100vw;
+    width:100%;
 
     min-height:100vh;
 
     padding:60px;
+    box-sizing: border-box;
 
 }
 
