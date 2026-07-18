@@ -13,6 +13,7 @@
 
     padding: 18px 40px;
     background: #1e3f20;
+    gap: 16px;
 }
 
 .logo a{
@@ -35,6 +36,28 @@
     color:white;
 }
 
+.auth-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-header-button {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    background: #8fa488;
+    color: #1e3f20;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.account-user-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .account-btn{
     background:#8fa488;
     border:none;
@@ -49,6 +72,184 @@
     height: 30px;
     width: 30px;
     margin-left: -7px;
+}
+
+.account-user-name {
+    font-weight: 700;
+    color: #d2e1c6;
+    white-space: nowrap;
+}
+
+.account-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 2000;
+}
+
+.account-modal {
+    position: relative;
+    width: min(700px, 100%);
+    max-height: 88vh;
+    overflow-y: auto;
+    background: #1c2f1b;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    color: #d2e1c6;
+}
+
+.account-modal h2 {
+    margin-bottom: 10px;
+}
+
+.account-modal-text {
+    color: #b9c9bb;
+    margin-bottom: 18px;
+}
+
+.auth-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.auth-toggle button {
+    flex: 1;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 12px;
+    background: #28492b;
+    color: #d2e1c6;
+    cursor: pointer;
+}
+
+.auth-toggle button.active {
+    background: #8fa488;
+    color: #1e3f20;
+}
+
+.auth-form,
+.account-active {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-form input,
+.contact-row input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #6f8768;
+    background: #234127;
+    color: #d2e1c6;
+}
+
+.role-row {
+    display: flex;
+    gap: 20px;
+}
+
+.role-row label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacts-box {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.contacts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.delete-contact-button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #d62839;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary-button,
+.small-button,
+.logout-button {
+    border: none;
+    cursor: pointer;
+}
+
+.primary-button,
+.logout-button,
+.delete-account-button {
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #8fa488;
+    color: #1e3f20;
+    font-weight: 700;
+}
+
+.delete-account-button {
+    background: #d62839;
+    color: white;
+}
+
+.small-button {
+    padding: 8px 10px;
+    border-radius: 999px;
+    background: #d8e7cb;
+    color: #1e3f20;
+    font-weight: 700;
+}
+
+.auth-error {
+    color: #ff9f9f;
+    margin-bottom: 8px;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.account-active {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.close-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: transparent;
+    color: #d2e1c6;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
 }
 
 .hamburger{
@@ -79,5 +280,26 @@
 
     .nav.active{
         display:flex;
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-header-actions {
+        gap: 8px;
+    }
+
+    .auth-header-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .account-user-chip {
+        gap: 6px;
+    }
+
+    .account-user-name {
+        font-size: 14px;
     }
 }
