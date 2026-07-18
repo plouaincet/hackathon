@@ -1,4 +1,6 @@
-export default function Grounding(){
+import { useState } from "react";
+
+export default function Grounding({ onBack }) {
 
     const steps = [
         {
@@ -28,6 +30,20 @@ export default function Grounding(){
         }
     ];
 
+    const [answers, setAnswers] = useState({
+        5: "",
+        4: "",
+        3: "",
+        2: "",
+        1: ""
+    });
+
+    function handleChange(number, value) {
+        setAnswers(prev => ({
+            ...prev,
+            [number]: value
+        }));
+    }
 
     return (
 
@@ -39,12 +55,11 @@ export default function Grounding(){
                 Concentrează-te pe simțurile tale.
             </p>
 
-
             <div className="grounding-list">
 
                 {steps.map((step) => (
 
-                    <div 
+                    <div
                         className="grounding-box"
                         key={step.number}
                     >
@@ -53,9 +68,16 @@ export default function Grounding(){
                             {step.number} - {step.title}
                         </h2>
 
-                        <p>
-                            {step.text}
-                        </p>
+                        <p>{step.text}</p>
+
+                        <textarea
+                            className="grounding-input"
+                            placeholder="Scrie aici..."
+                            value={answers[step.number]}
+                            onChange={(e) =>
+                                handleChange(step.number, e.target.value)
+                            }
+                        />
 
                     </div>
 
@@ -63,6 +85,12 @@ export default function Grounding(){
 
             </div>
 
+            <button
+    className="activity"
+    onClick={onBack}
+>
+    ← Înapoi
+</button>
         </div>
 
     );
