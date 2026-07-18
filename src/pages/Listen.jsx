@@ -43,6 +43,7 @@ export default function Listen() {
         try {
             const prompt = [
                 "You are a calm, warm, and supportive AI companion.",
+                "Important: do not hallucinate or make up facts. If you are unsure, say that you are not sure and keep the response grounded in what the user has shared.",
                 ...nextMessages.map((message) => `${message.role === "user" ? "User" : "Assistant"}: ${message.content}`),
                 "Assistant:"
             ].join("\n");
@@ -206,7 +207,9 @@ export default function Listen() {
                             borderRadius: "12px",
                             padding: "0.8rem",
                             border: "1px solid #9bb99d",
-                            resize: "vertical"
+                            resize: "vertical",
+                            backgroundColor: "#b7d7c7",
+                            color: "#1f4d2f"
                         }}
                     />
 
