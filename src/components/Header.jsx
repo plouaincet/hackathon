@@ -202,8 +202,8 @@ function Header() {
 
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
         <Link to="/journal">Journaling</Link>
-        <Link to="/calm">Exercitii</Link>
-        <Link to="/vent">2AM buddy</Link>
+        <Link to="/calm">Exercises</Link>
+        <Link to="/listen">2AM buddy</Link>
       </nav>
 
       {!account ? (
