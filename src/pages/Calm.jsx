@@ -26,34 +26,34 @@ export default function Calm(){
 
                 if(prev <= 1){
 
-                    if(phase === "Inspiră"){
+                    if(phase === "Inhale"){
 
-                        setPhase("Ține");
+                        setPhase("Hold");
                         return 7;
 
                     }
 
 
-                    if(phase === "Ține"){
+                    if(phase === "Hold"){
 
-                        setPhase("Expiră");
+                        setPhase("Exhale");
                         return 8;
 
                     }
 
 
-                    if(phase === "Expiră"){
+                    if(phase === "Exhale"){
 
                         if(round >= 4){
 
                             setBreathing(false);
-                            setPhase("Terminat 🎉");
+                            setPhase("Finished 🎉");
                             return 0;
 
                         }
 
                         setRound(round + 1);
-                        setPhase("Inspiră");
+                        setPhase("Inhale");
                         return 4;
 
                     }
@@ -79,7 +79,7 @@ export default function Calm(){
 
         setBreathing(true);
         setRound(1);
-        setPhase("Inspiră");
+        setPhase("Inhale");
         setSeconds(4);
 
     }
@@ -117,22 +117,22 @@ function resetBreathing(){
 
                 <p className="subtitle">
 
-                    Inspiră 4 secunde, ține 7 secunde,
-                    expiră 8 secunde.
+                    Inhale for 4 seconds, hold for 7 seconds,
+                    exhale for 8 seconds.
                     <br/>
-                    Repetă de 3-4 ori.
+                    Repeat 3-4 times.
 
                 </p>
 
 
 
-                {!breathing && phase !== "Terminat 🎉" && (
+                {!breathing && phase !== "Finished 🎉" && (
 
                     <button
                         className="activity"
                         onClick={startBreathing}
                     >
-                        ▶ Începe
+                        ▶ Start
                     </button>
 
                 )}
@@ -144,7 +144,7 @@ function resetBreathing(){
                     <div className="sliderBox">
 
                         <h2>
-                            Runda {round}/4
+                            Round {round}/4
                         </h2>
 
 
@@ -163,12 +163,12 @@ function resetBreathing(){
 
 
 
-                {phase === "Terminat 🎉" && (
+                {phase === "Finished 🎉" && (
 
                     <div className="sliderBox">
 
                         <h2>
-                            Felicitări! Exercițiul este gata.
+                            Congratulations! The exercise is complete.
                         </h2>
 
                     </div>
@@ -181,7 +181,7 @@ function resetBreathing(){
     className="activity"
     onClick={resetBreathing}
 >
-    ← Înapoi
+    ← Back
 </button>
 
 
