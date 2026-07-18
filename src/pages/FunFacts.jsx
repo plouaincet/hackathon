@@ -158,20 +158,22 @@ export default function FunFacts() {
         paddingRight: "1.2rem"
       }}
     >
-      <button
-        className="activity"
-        onClick={handleBackToMenu}
-        style={{
-          position: "fixed",
-          top: "5.5rem",
-          right: "1rem",
-          width: "180px",
-          zIndex: 20,
-          fontSize: "0.95rem"
-        }}
-      >
-        Back to menu
-      </button>
+      {mode && !isLoading && (
+        <button
+          className="activity"
+          onClick={handleBackToMenu}
+          style={{
+            position: "fixed",
+            top: "5.5rem",
+            right: "1rem",
+            width: "180px",
+            zIndex: 20,
+            fontSize: "0.95rem"
+          }}
+        >
+          Back to menu
+        </button>
+      )}
 
       {!mode && (
         <>
