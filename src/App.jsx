@@ -9,6 +9,8 @@ import Vent from "./pages/Vent";
 import Calm from "./pages/Calm";
 import FunFacts from "./pages/FunFacts";
 
+import Grounding from "./pages/Grounding";
+
 function App() {
   return (
     <BrowserRouter>
