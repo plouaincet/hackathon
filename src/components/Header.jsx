@@ -197,7 +197,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="/">MindCare</Link>
+        <Link to="/">MindBloom</Link>
       </div>
 
       <nav className={`nav ${menuOpen ? "active" : ""}`}>

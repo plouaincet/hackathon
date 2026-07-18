@@ -5,28 +5,28 @@ export default function Grounding({ onBack }) {
     const steps = [
         {
             number: "5",
-            title: "Lucruri pe care le vezi",
-            text: "Observă 5 lucruri pe care le vezi în jurul tău."
+            title: "Things you can see",
+            text: "Observe 5 things you can see around you."
         },
         {
             number: "4",
-            title: "Lucruri pe care le atingi",
-            text: "Observă 4 lucruri pe care le poți atinge."
+            title: "Things you can touch",
+            text: "Observe 4 things you can touch."
         },
         {
             number: "3",
-            title: "Sunete",
-            text: "Observă 3 sunete pe care le auzi."
+            title: "Sounds",
+            text: "Observe 3 sounds you can hear."
         },
         {
             number: "2",
-            title: "Mirosuri",
-            text: "Observă 2 mirosuri din jurul tău."
+            title: "Smells",
+            text: "Observe 2 smells you can detect."
         },
         {
             number: "1",
-            title: "Gust",
-            text: "Observă 1 gust pe care îl simți."
+            title: "Tastes",
+            text: "Observe 1 taste you can experience."
         }
     ];
 
@@ -52,7 +52,7 @@ export default function Grounding({ onBack }) {
             <h1>🌿 5-4-3-2-1 Grounding</h1>
 
             <p className="subtitle">
-                Concentrează-te pe simțurile tale.
+                Focus on your senses.
             </p>
 
             <div className="grounding-list">
@@ -72,7 +72,7 @@ export default function Grounding({ onBack }) {
 
                         <textarea
                             className="grounding-input"
-                            placeholder="Scrie aici..."
+                            placeholder="Write here..."
                             value={answers[step.number]}
                             onChange={(e) =>
                                 handleChange(step.number, e.target.value)
@@ -89,7 +89,7 @@ export default function Grounding({ onBack }) {
     className="activity"
     onClick={onBack}
 >
-    ← Înapoi
+    ← Back
 </button>
         </div>
 
