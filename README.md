@@ -1,10 +1,10 @@
-# Nightlight
+# MindBloom
 
-Nightlight is a calming wellness web app designed for reflection, emotional support, and gentle bedtime routines. It gives users a comforting space to journal, talk with an AI companion, practice grounding exercises, and explore relaxing fun facts.
+MindBloom is a calming wellness web app designed for reflection, emotional support, and gentle bedtime routines. It gives users a comforting space to journal, talk with an AI companion, practice grounding exercises, and explore relaxing fun facts.
 
 ## What this project does
 
-Nightlight combines a warm, soft UI with simple self-care experiences:
+MindBloom combines a warm, soft UI with simple self-care experiences:
 
 - A welcoming home screen with options for chat, journaling, and calming activities
 - A journal page where users can write down their thoughts and clear the text when needed
