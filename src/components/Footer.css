@@ -1,0 +1,22 @@
+.app-footer {
+  margin-top: auto;
+  padding: 20px 24px 28px;
+  background: #1e3f20;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.footer-content a {
+  color: #d2e1c6;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: white;
+}

@@ -221,19 +221,13 @@ body{
 }
 
 .page{
-
     display:flex;
-
     flex-direction:column;
-
-    justify-content:center;
-
+    justify-content:flex-start;
     align-items:center;
-
-    height:100vh;
-
+    min-height:100vh;
+    padding: 48px 24px 120px;
     text-align:center;
-
 }
 
 .activity{

@@ -61,7 +61,7 @@ function Header() {
     event.preventDefault();
 
     if (!registerForm.firstName.trim() || !registerForm.lastName.trim()) {
-      setAuthError("Completează numele și prenumele.");
+      setAuthError("Write your name and surname.");
       return;
     }
 
@@ -239,9 +239,9 @@ function Header() {
               ✕
             </button>
 
-            <h2>Contul meu</h2>
+            <h2>My Account</h2>
             <p className="account-modal-text">
-              Creează-ți singur contul, apoi adaugă contacte de urgență dacă vrei să apară opțiunea de Trusted Contact în popup-ul de ajutor.
+              Make the account yourself, then add emergency contacts if you want the Trusted Contact option to appear in the help popup.
             </p>
 
             {!account ? (
@@ -273,25 +273,25 @@ function Header() {
                     />
                     <input
                       type="password"
-                      placeholder="Parolă"
+                      placeholder="Password"
                       value={loginForm.password}
                       onChange={(event) => setLoginForm({ ...loginForm, password: event.target.value })}
                     />
                     <button type="submit" className="primary-button">
-                      Intră în cont
+                      Log in
                     </button>
                   </form>
                 ) : (
                   <form className="auth-form" onSubmit={handleRegister}>
                     <input
                       type="text"
-                      placeholder="Nume"
+                      placeholder="Last Name"
                       value={registerForm.lastName}
                       onChange={(event) => setRegisterForm({ ...registerForm, lastName: event.target.value })}
                     />
                     <input
                       type="text"
-                      placeholder="Prenume"
+                      placeholder="First Name"
                       value={registerForm.firstName}
                       onChange={(event) => setRegisterForm({ ...registerForm, firstName: event.target.value })}
                     />
@@ -303,7 +303,7 @@ function Header() {
                     />
                     <input
                       type="password"
-                      placeholder="Parolă"
+                      placeholder="Password"
                       value={registerForm.password}
                       onChange={(event) => setRegisterForm({ ...registerForm, password: event.target.value })}
                     />
@@ -334,9 +334,9 @@ function Header() {
                     {registerForm.role === "user" && (
                       <div className="contacts-box">
                         <div className="contacts-header">
-                          <span>Contacte de urgență</span>
+                          <span>Emergency Contacts</span>
                           <button type="button" className="small-button" onClick={addContactField}>
-                            + Adaugă
+                            + Add
                           </button>
                         </div>
 
@@ -344,13 +344,13 @@ function Header() {
                           <div className="contact-row" key={`contact-${index}`}>
                             <input
                               type="text"
-                              placeholder="Nume contact"
+                              placeholder="Contact Name"
                               value={contact.name}
                               onChange={(event) => updateContact(index, "name", event.target.value)}
                             />
                             <input
                               type="tel"
-                              placeholder="Telefon"
+                              placeholder="Phone Number"
                               value={contact.phone}
                               onChange={(event) => updateContact(index, "phone", event.target.value)}
                             />
@@ -360,7 +360,7 @@ function Header() {
                                 className="delete-contact-button"
                                 onClick={() => removeContactField(index)}
                               >
-                                Șterge
+                                Delete
                               </button>
                             )}
                           </div>
@@ -369,7 +369,7 @@ function Header() {
                     )}
 
                     <button type="submit" className="primary-button">
-                      Creează cont
+                      Create Account
                     </button>
                   </form>
                 )}
@@ -383,24 +383,24 @@ function Header() {
 
                 <div className="contacts-box contacts-edit-box">
                   <div className="contacts-header">
-                    <span>Editează profilul</span>
+                    <span>Edit Profile</span>
                   </div>
 
                   <div className="contact-row">
                     <input
                       type="text"
-                      placeholder="Nume"
+                      placeholder="Last Name"
                       value={account.lastName || ""}
                       onChange={(event) => updateProfileField("lastName", event.target.value)}
                     />
                     <input
                       type="text"
-                      placeholder="Prenume"
+                      placeholder="First Name"
                       value={account.firstName || ""}
                       onChange={(event) => updateProfileField("firstName", event.target.value)}
                     />
                     <button type="button" className="primary-button" onClick={saveProfile}>
-                      Salvează profil
+                      Save Profile
                     </button>
                   </div>
                 </div>
@@ -408,9 +408,9 @@ function Header() {
                 {account.role === "user" && (
                   <div className="contacts-box contacts-edit-box">
                     <div className="contacts-header">
-                      <span>Contacte de urgență</span>
+                      <span>Emergency Contacts</span>
                       <button type="button" className="small-button" onClick={addContactField}>
-                        + Adaugă
+                        + Add
                       </button>
                     </div>
 
@@ -418,13 +418,13 @@ function Header() {
                       <div className="contact-row" key={`edit-contact-${index}`}>
                         <input
                           type="text"
-                          placeholder="Nume contact"
+                          placeholder="Contact Name"
                           value={contact.name}
                           onChange={(event) => updateContact(index, "name", event.target.value)}
                         />
                         <input
                           type="tel"
-                          placeholder="Telefon"
+                          placeholder="Phone Number"
                           value={contact.phone}
                           onChange={(event) => updateContact(index, "phone", event.target.value)}
                         />
@@ -434,24 +434,24 @@ function Header() {
                             className="delete-contact-button"
                             onClick={() => removeContactField(index)}
                           >
-                            Șterge
+                            Delete
                           </button>
                         )}
                       </div>
                     ))}
 
                     <button type="button" className="primary-button" onClick={saveEmergencyContacts}>
-                      Salvează contacte
+                      Save Contacts
                     </button>
                   </div>
                 )}
 
                 <div className="profile-actions">
                   <button className="logout-button" onClick={handleLogout}>
-                    Deloghează-te
+                    Logout
                   </button>
                   <button className="delete-account-button" onClick={handleDeleteAccount}>
-                    Șterge cont
+                    Delete Account
                   </button>
                 </div>
               </div>

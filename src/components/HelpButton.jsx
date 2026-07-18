@@ -59,19 +59,19 @@ export default function HelpButton() {
               ✕
             </button>
 
-            <h2>Ai nevoie de ajutor?</h2>
+            <h2>Do you need help?</h2>
 
             <p>
-              Dacă simți că ești într-o situație dificilă,
-              poți apela una dintre opțiunile de mai jos.
+              If you feel you are in a difficult situation,
+              you can call one of the options below.
             </p>
 
             <a href="tel:112" className="help-option emergency">
-              🚨 Sună la 112
+              🚨 Call 112
             </a>
 
             <a href="tel:0753353071" className="help-option support">
-              💙 Sună la DepreHUB (24/7)
+              💙 Call DepreHUB (24/7)
             </a>
 
             <a href="tel:0374461461" className="help-option teen">
@@ -101,13 +101,13 @@ export default function HelpButton() {
                   onClick={() => handleCallContact(selectedContact)}
                   disabled={!selectedContact}
                 >
-                  👤 Sună la contactul ales
+                  👤 Call your selected contact
                 </button>
               </div>
             )}
 
             <button className="help-option psychologist">
-              🩺 Programează-te la un psiholog
+              🩺 Book an appointment with a psychologist
             </button>
           </div>
         </>
