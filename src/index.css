@@ -383,3 +383,31 @@ body{
     font-size:14px;
 
 }
+
+.grounding-input{
+    width: 100%;
+    min-height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #b7d7c7;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.grounding-input:focus{
+    border-color: #5ca87c;
+    box-shadow: 0 0 6px rgba(92,168,124,.3);
+}
+
+
+.grounding-input {
+    background-color: #b7d7c7;
+    color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+}

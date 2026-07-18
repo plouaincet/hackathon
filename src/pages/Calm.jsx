@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import Grounding from "./Grounding";
 export default function Calm(){
 
     const [activity, setActivity] = useState("");
@@ -103,51 +103,9 @@ function resetBreathing(){
 
     // Grounding page
 
-    if(activity === "grounding"){
-
-        const steps = [
-            "5 lucruri pe care le vezi",
-            "4 lucruri pe care le atingi",
-            "3 sunete pe care le auzi",
-            "2 mirosuri pe care le simți",
-            "1 gust pe care îl simți"
-        ];
-
-
-        return (
-
-            <div className="page">
-
-                <h1>🌿 5-4-3-2-1 Grounding</h1>
-
-
-                <div className="grounding-list">
-
-                    {steps.map((step,index)=>(
-
-                        <div className="grounding-box" key={step}>
-
-                            <h2>{5-index}</h2>
-                            <p>{step}</p>
-
-                        </div>
-
-                    ))}
-
-                </div>
-
-
-                <button
-                    className="activity"
-                    onClick={()=>setActivity("")}
-                >
-                    ← Înapoi
-                </button>
-
-            </div>
-
-        );
-    }
+    if (activity === "grounding") {
+    return <Grounding onBack={() => setActivity("")} />;
+}
 
 
 
