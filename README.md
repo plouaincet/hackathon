@@ -78,25 +78,6 @@ Here are the main app behaviors implemented in the project:
 - Axios for HTTP requests
 - CSS for the app styling
 
-## Setup instructions
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-2. Create a `.env` file and add your API key:
-   ```bash
-   FIREWORKS_API_KEY=your_key_here
-   ```
-
-3. Start the app:
-   ```bash
-   npm run dev
-   ```
-
-4. Open the local app in your browser.
-
 ## Notes
 
 - The AI chat features require a valid Fireworks API key.
