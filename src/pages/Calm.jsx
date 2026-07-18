@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 import { useState, useEffect } from "react";
 import Grounding from "./Grounding";
 export default function Calm(){
+    const navigate = useNavigate();
 
     const [activity, setActivity] = useState("");
 
@@ -221,8 +224,7 @@ function resetBreathing(){
                 Deep Breathing
             </button>
 
-
-            <button className="activity">
+            <button className="activity" onClick={() => navigate("/fun-facts")}>
                 Fun facts
             </button>
 
