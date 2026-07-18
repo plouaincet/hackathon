@@ -1,4 +1,3 @@
-import MoodSlider from "../components/MoodSlider";
 import OptionCard from "../components/OptionCard";
 
 export default function Home() {
