@@ -158,7 +158,7 @@ export default function Listen() {
 
 
             {showAiChat ? (
-                <div className="sliderBox" style={{ width: "min(760px, 100%)" }}>
+                <div className="sliderBox" style={{ width: "min(760px, 100%)", marginBottom: "80px" }}>
                     <h2>🤖 Talk to AI</h2>
                     <p style={{ marginBottom: "1rem" }}>
                         Chat with your AI companion here. Your conversation history is remembered.
