@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Listen from "./pages/Listen";
 import Vent from "./pages/Vent";
 import Calm from "./pages/Calm";
+import FunFacts from "./pages/FunFacts";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/listen" element={<Listen />} />
         <Route path="/vent" element={<Vent />} />
         <Route path="/calm" element={<Calm />} />
+        <Route path="/fun-facts" element={<FunFacts />} />
       </Routes>
 
     </BrowserRouter>

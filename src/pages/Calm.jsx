@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Calm(){
+    const navigate = useNavigate();
 
     return(
 
@@ -14,7 +17,7 @@ export default function Calm(){
                 Deep Breathing
             </button>
 
-            <button className="activity">
+            <button className="activity" onClick={() => navigate("/fun-facts")}>
                 Fun facts
             </button>
 
