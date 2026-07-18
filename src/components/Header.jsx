@@ -42,7 +42,7 @@ function Header() {
     const sessionAccount = await loginAccount(loginForm.email, loginForm.password);
 
     if (!sessionAccount) {
-      setAuthError("Email sau parolă incorectă.");
+      setAuthError("Password or email is incorrect.");
       return;
     }
 
