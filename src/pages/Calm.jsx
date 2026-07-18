@@ -84,14 +84,6 @@ export default function Calm(){
 
     }
 
-    function startBreathing(){
-
-    setBreathing(true);
-    setRound(1);
-    setPhase("Inspiră");
-    setSeconds(4);
-
-}
 
 function resetBreathing(){
 
